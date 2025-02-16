@@ -22,8 +22,6 @@ jobs:
 
       - name: Run Docker container
         run: |
-          cd fastapi-book-project
-          git stash
           git pull origin main
           docker stop fastapi-container || true
           docker rm fastapi-container || true
